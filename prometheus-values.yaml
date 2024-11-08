@@ -1,0 +1,5 @@
+server:
+  service:
+    port: 9090      # Expose Prometheus externally on port 9090
+    targetPort: 9090 # Internal port for Prometheus
+

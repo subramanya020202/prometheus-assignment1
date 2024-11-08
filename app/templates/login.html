@@ -1,0 +1,74 @@
+<!-- /app/templates/login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>
+
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: white;
+}
+
+.card {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
+height: 300px;
+width: 400px;
+text-align: center;
+background-color:#f4f4f4
+}
+
+h2 {
+color: #333;
+}
+
+form {
+margin: 20px 0;
+}
+
+form button[type="submit"] {
+height: 50px;
+width: 75px;
+border: none;
+border-radius: 4px;
+background-color: #5cb85c;
+color: white;
+cursor: pointer;
+margin: 20px 0;
+}
+
+form button:hover {
+background-color: #4cae4c;
+}
+
+form input[type="text"], form input[type="password"] {
+padding: 10px;
+margin-right: 10px;
+border: 1px solid #ccc;
+border-radius: 4px;
+margin: 20px 0;
+}
+
+</style>
+</head>
+<body>
+<center>
+    <h2>Login</h2>
+<div class="card">
+    <form method="POST" action="/login">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+</div>
+</center>
+</body>
+</html>
